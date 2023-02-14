@@ -1,14 +1,10 @@
-name: Shell Commands
+name: Use of run in steps via Shell Command
 
 on: [push]
 
 jobs:
-  run-shell-commands:
+  Test-workflow:
     runs-on: ubuntu-latest
-    steps:
-      - name: echo a string
-        run: echo "Hello World"
-      - name: run multiline script
-        run: |
-          node -v
-          npm -v
+    steps: 
+      - name: Print
+        run: echo "How are you?"
