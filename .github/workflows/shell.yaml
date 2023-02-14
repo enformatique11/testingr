@@ -8,3 +8,7 @@ jobs:
     steps: 
       - name: Print
         run: echo "How are you?"
+      - name: Test multi-line
+        run: !
+          nove -v
+          npm -v
