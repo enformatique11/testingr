@@ -10,5 +10,5 @@ jobs:
         run: echo "How are you?"
       - name: Test multi-line
         run: !
-          nove -v
+          node -v
           npm -v
