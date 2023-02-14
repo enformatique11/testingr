@@ -1,12 +1,10 @@
-name: Test Script
+name: Shell Commands
 
 on: [push]
 
 jobs:
-  run-git-hub-actions:
-    runs: ubuntu latest
+  run-shell-commands:
+    runs-on: ubuntu-latest
     steps:
-      - name: Simple JS action 
-        uses: actions/hello-world-javascript-action@v1
-        with:
-          who-to-greet: John Master
+      - name: echo a string
+        run: echo "Hello World"
