@@ -9,6 +9,6 @@ jobs:
       - name: Print
         run: echo "How are you?"
       - name: Test multi-line
-        run: !
+        run: |
           node -v
           npm -v
