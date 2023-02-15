@@ -17,3 +17,9 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
+
+  Windows-workflow:
+    runs-on: windows-latest
+    steps: 
+      - name: Windows Poweshell
+        run: Get-Location
