@@ -20,6 +20,7 @@ jobs:
 
   Windows-workflow:
     runs-on: windows-latest
+    needs: ["Test-workflow"]
     steps: 
       - name: Windows Poweshell
         run: Get-Location
