@@ -6,6 +6,10 @@ jobs:
   Test-workflow:
     runs-on: ubuntu-latest
     steps:
+      - name: list files
+        run: |
+          pwd
+          ls
       - name: run Actions
         id: greet
         uses: actions/hello-world-javascript-action@v1
