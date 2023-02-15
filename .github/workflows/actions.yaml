@@ -1,0 +1,12 @@
+name: Actions Test-workflow
+
+on: [push]
+
+jobs:
+  Test-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run Actions
+        uses: actions/hello-world-java-script-action@v1
+        with: 
+          who-to-greet: Hello
