@@ -23,3 +23,6 @@ jobs:
     steps: 
       - name: Windows Poweshell
         run: Get-Location
+      - name: Directory bash
+        run: pwd
+        shell: bash
